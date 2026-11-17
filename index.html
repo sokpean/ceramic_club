@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Williams Ceramics Club</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Reusable icons (i-arrow is used by the tutorial cards in script.js) -->
+    <svg style="display: none" aria-hidden="true">
+      <symbol id="i-arrow" viewBox="0 0 20 20">
+        <path d="M4 10h11M11 6l4 4-4 4" />
+      </symbol>
+      <symbol id="i-mark" viewBox="0 0 48 48">
+        <path d="M11 18c3-8 23-8 26 0l-3 17c-1 5-19 5-20 0l-3-17Z" />
+        <ellipse cx="24" cy="18" rx="13" ry="5" />
+        <ellipse cx="24" cy="18" rx="7" ry="2.5" />
+      </symbol>
+    </svg>
+
+    <div class="app-shell">
+      <!-- ================= HEADER ================= -->
+      <header class="site-header">
+        <button class="brand" data-nav="home" aria-label="Williams Ceramics Club home">
+          <svg class="mark" viewBox="0 0 48 48" aria-hidden="true"><use href="#i-mark" /></svg>
+          <span>Williams<small>Ceramics Club</small></span>
+        </button>
+        <button class="menu-button" id="menu-button" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="main-nav" aria-label="Main navigation">
+          <button data-nav="home">About us</button>
+          <button data-nav="hours">Studio hours</button>
+          <button data-nav="resources">Resources</button>
+          <button data-nav="contact">Contact</button>
+        </nav>
+      </header>
+
+      <div id="pages" class="page-transition">
+        <!-- ================= HOME ================= -->
+        <main data-page="home">
+          <section class="hero">
+            <div class="hero-copy">
+              <h1>Welcome to the Ceramic Club!</h1>
+              <p class="hero-intro">
+                Everyone of all levels are welcome to join us during open hours for wheel throwing,
+                hand building, trimming, glazing, and everything in between. However, due to the high
+                numbers of interest we'll be posting a signup sheet for a guaranteed time on the wheel.
+                With that being said, the last hour of every open hour will be unreserved wheel slots
+                which are walk-ins friendly. The sign up sheet only pertains to the wheel; if you want
+                to hand build, trim, glaze, or anything else clay related, you are welcome to walk-in
+                anytime during open hours (no signup needed).
+                Find the Ceramics Club on the first floor of Mark Hopkins, near the Purple Bike workshops.
+              </p>
+            </div>
+            <div class="hero-image">
+              <img
+                src="https://images.unsplash.com/photo-1595351298020-038700609878?auto=format&fit=crop&w=1800&q=85"
+                alt="A ceramic artist shaping clay on a pottery wheel"
+              />
+            </div>
+          </section>
+
+          <section class="marquee" aria-label="Open hours">
+            <div>
+              <span>Open Hours:</span>
+              <span>Tuesday 4–7pm</span> <b>◆</b>
+              <span>Thursday 4–6pm</span> <b>◆</b>
+              <span>Friday 2–5pm</span> <b>◆</b>
+              <span>Saturday 1–4pm</span>
+            </div>
+          </section>
+        </main>
+
+        <!-- ================= STUDIO HOURS ================= -->
+        <main class="inner-page" data-page="hours" hidden>
+          <section class="wheel-policy">
+            <div class="wheel-policy-heading">
+              <h2>Signups &amp; Walk-ins</h2>
+              <a
+                class="text-button"
+                href="https://groupme.com/join_group/117464205/nO8jdGMK"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Join our GroupMe
+              </a>
+            </div>
+            <div class="wheel-policy-copy">
+              <p>
+                Because of high interest, we’ll post a signup sheet for guaranteed time on the
+                wheel. The final hour of every open session is left unreserved and is walk-in
+                friendly.
+              </p>
+              <p>
+                The signup only applies to the wheel. Hand building, trimming, glazing, and other
+                clay work are always welcome as walk-ins during any open hours, no signup needed.
+              </p>
+              <p class="policy-update">
+                The Fall 2026 signup sheets is full. We'll open signups again in the Spring! The most
+                up-to-date information will be posted on our GroupMe.
+              </p>
+            </div>
+          </section>
+
+          <section class="hours-layout">
+            <div class="schedule">
+              <div class="schedule-row muted"><h3>Monday</h3><p>No open hours</p><strong>Closed</strong></div>
+              <div class="schedule-row"><h3>Tuesday</h3><p>Open hours</p><strong>4–7 pm</strong></div>
+              <div class="schedule-row muted"><h3>Wednesday</h3><p>No open hours</p><strong>Closed</strong></div>
+              <div class="schedule-row"><h3>Thursday</h3><p>Open hours</p><strong>4–6 pm</strong></div>
+              <div class="schedule-row"><h3>Friday</h3><p>Open hours</p><strong>2–5 pm</strong></div>
+              <div class="schedule-row"><h3>Saturday</h3><p>Open hours</p><strong>1–4 pm</strong></div>
+              <div class="schedule-row muted"><h3>Sunday</h3><p>No open hours</p><strong>Closed</strong></div>
+              <p class="schedule-note">
+                The last hour of each session has unreserved, walk-in-friendly wheel slots.
+              </p>
+            </div>
+
+            <aside class="visit-card">
+              <img
+                src="https://images.unsplash.com/photo-1610206349499-c932c3b3aacb?auto=format&fit=crop&w=1200&q=85"
+                alt="Handmade ceramics arranged on wooden shelves"
+              />
+              <div>
+                <h2>Here’s what to know</h2>
+                <ul>
+                  <li><span>01</span>All experience levels are welcome.</li>
+                  <li><span>02</span>Wear clothes you don’t mind dirtying.</li>
+                  <li><span>03</span>Short nails will make your life easier.</li>
+                </ul>
+              </div>
+            </aside>
+          </section>
+        </main>
+
+        <!-- ================= RESOURCES ================= -->
+        <main class="inner-page" data-page="resources" hidden>
+          <section class="page-title">
+            <h1>Videos we found helpful</h1>
+          </section>
+          <!-- Cards are generated from the list in script.js -->
+          <section class="tutorial-grid" id="tutorial-grid"></section>
+        </main>
+
+        <!-- ================= CONTACT ================= -->
+        <main class="inner-page" data-page="contact" hidden>
+          <section class="page-title">
+            <h1>Meet the board</h1>
+            <p>Feel free to email us if you have any questions</p>
+          </section>
+
+          <section class="board-grid">
+            
+            <article class="member-card">
+              <div class="member-image">
+                <img
+                  src="sokpean.JPG"/>
+              </div>
+              <h2>Sokpean</h2>
+              <p class="member-role">su1</p>
+            </article>
+
+            <article class="member-card">
+              <div class="member-image">
+                <img
+                  src="Yvonne.jpeg"/>
+              </div>
+              <h2>Yvonne</h2>
+              <p class="member-role">yh7</p>
+            </article>
+
+            <article class="member-card">
+              <div class="member-image">
+                <img
+                  src="hattie.jpeg"/>
+              </div>
+              <h2>Hattie</h2>
+              <p class="member-role">hls3</p>
+            
+            </article>
+
+            <article class="member-card">
+              <div class="member-image">
+                <img
+                  src="lucy.jpeg"/>
+              </div>
+              <h2>Lucy</h2>
+              <p class="member-role">lsf3</p>
+            </article>
+
+            <article class="member-card">
+              <div class="member-image">
+                <img
+                  src="julia.jpeg"/>
+              </div>
+              <h2>Julia</h2>
+              <p class="member-role">jd24</p>
+            </article>
+
+            <article class="member-card">
+              <div class="member-image">
+                <img
+                  src="Melania.jpeg"/>
+              </div>
+              <h2>Melania</h2>
+              <p class="member-role">mge3</p>
+            </article>
+
+            <article class="member-card">
+              <div class="member-image">
+                <img
+                  src="amaya.jpeg"/>
+              </div>
+              <h2>Amaya</h2>
+              <p class="member-role">amg13</p>
+            </article>
+
+            <article class="member-card">
+              <div class="member-image">
+                <img
+                  src="emma.jpeg"/>
+              </div>
+              <h2>Emma</h2>
+              <p class="member-role">eg18</p>
+            </article>
+
+          </section>
+        </main>
+      </div>
+
+      <!-- ================= FOOTER ================= -->
+      <footer>
+        <div class="footer-brand">
+          <svg class="mark" viewBox="0 0 48 48" aria-hidden="true"><use href="#i-mark" /></svg>
+          <strong>Williams Ceramics Club</strong>
+        </div>
+        <div class="footer-links">
+          <button data-nav="hours">Studio hours</button>
+          <button data-nav="resources">Resources</button>
+          <button data-nav="contact">Contact</button>
+          <a
+            href="https://groupme.com/join_group/117464205/nO8jdGMK"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GroupMe
+          </a>
+        </div>
+        <p class="copyright">© 2026 Williams Ceramics Club</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
