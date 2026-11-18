@@ -4,8 +4,8 @@
    ========================================================= */
 const tutorials = [
   { title: "Centering", videoId: "-YCGK33c0xs" },
-  { title: "Opening", videoId: "VM8SJZ4lNRY" },
-  { title: "Pulling", videoId: "HF5IAJ0x2g0" },
+  { title: "Opening", videoId: "HF5IAJ0x2g0" },
+  { title: "Pulling", videoId: "VM8SJZ4lNRY" },
   { title: "Trimming", videoId: "XhlJLVL-Zg8" },
 ];
 
